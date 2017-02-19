@@ -54,6 +54,12 @@ const styles = StyleSheet.create(
     card__green: {
       color: '#4CAF50'
     },
+    card__black: {
+      color: '#000000'
+    },
+    card__red: {
+      color: '#ce0000'
+    },
     card__yellow: {
       color: '#ff9800'
     }

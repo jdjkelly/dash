@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import Card from './card';
 import styles from './styles';
+import Config from './config';
 
 export default class Application extends Component {
   state = {
@@ -25,7 +26,7 @@ export default class Application extends Component {
 
   constructor(props: any) {
     super(props);
-    fetch('http://localhost:3000')
+    fetch(Config.__API_URI__)
       .then((response) => response.json())
       .then((cards) => {
         this.setState(cards);
